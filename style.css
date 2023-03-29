@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+.result{
+    display: block;
+}
+.result__score__title, .result__score__desc,.result__score__image__total{
+    color:rgba(255, 255, 255, 0.76);
+}
+.result__score__title{
+    font-size: 23px;
+}
+.result__score__great{
+    color: white;
+    font-size: 25px;
+}
+.result__score__image__marks{
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+.result__score__image{
+    align-items: center;
+    justify-content: center; 
+    display:flex;
+    flex-direction: column;
+}
+
+.result__score__image__total{
+    font-size: 20px;
+}
+.result__summary__item{
+    border: 2px solid black;
+}
+.result__score{
+    width: 100%;
+    padding: 20px 30px;
+    background-image:linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius:0px 0px 50px 50px;
+    text-align: center;
+   
+}
+.result__summary{
+    width: 100%;
+    background-color:  white;
+    padding: 20px 30px;
+}
+.result__score__image{
+width: 200px;
+height: 200px;
+border-radius: 100px;
+background-image:linear-gradient(to bottom,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+text-align: center;
+margin: auto;
+}
+.result__summary__item{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+}
+.result__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.result__summary__item--reaction .result__summary__item__name{
+    color: hsl(0, 100%, 67%) ;
+}
+.result__summary__item--memory .result__summary__item__name{
+    color: hsl(39, 100%, 56%);
+}
+.result__summary__item--verbal .result__summary__item__name{
+    color:hsl(166, 100%, 37%) ;
+}
+.result__summary__item--visual .result__summary__item__name{
+    color:hsl(234, 85%, 45%) ;
+}
+.result__summary__item--reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.result__summary__item.result__summary__item--memory{
+    background-color:hsla(39, 100%, 56%, 0.1);
+}
+.result__summary__item.result__summary__item--verbal{
+    background-color:hsla(166, 100%, 37%, 0.1);
+}
+.result__summary__item.result__summary__item--visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.result__summary__btn{
+    padding: 20px 40%; 
+    border-radius: 30px;
+    background-color:  hsl(224, 30%, 27%);
+    color: white;
+    font-size: 15px;
+    border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+@media (min-width:1440px){
+    .container{
+        padding: 400px;
+    }
+    .result{
+        display: flex;
+        background: white;
+        box-shadow: 5px 5px 25px hsl(221, 100%, 96%);
+        border-radius: 50px;
+    }
+    .result__score, .result__summary{
+        border-radius: 50px;
+    }
+}
